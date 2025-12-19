@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Double-blind friendly meta -->
+  <meta name="title" content="FlowerDance: MeanFlow for Efficient and Refined 3D Dance Generation" />
+  <meta name="description" content="Anonymous project page for FlowerDance" />
+  <meta name="author" content="Anonymous Authors" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="language" content="English" />
+
+  <!-- Open Graph / Twitter (generic) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Anonymous Project Page" />
+  <meta property="og:title" content="FlowerDance — Anonymous Project Page" />
+  <meta property="og:description" content="Anonymous project page with teaser and result videos." />
+  <meta property="og:image" content="./teaser/flowerteaser.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FlowerDance — Anonymous Project Page" />
+  <meta name="twitter:description" content="Anonymous project page with teaser and result videos." />
+  <meta name="twitter:image" content="./teaser/flowerteaser.png" />
+
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="static/css/bulma.min.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+  </noscript>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- JS -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Color title + one-video-per-row layout -->
+  <style>
+    :root{
+      --flowcolor:#FF3B30;   /* red */
+      --ecolor:#FF9500;      /* orange */
+      --rcolor:#FFD60A;      /* yellow */
+      --dancecolor:#007AFF;  /* blue */
+    }
+
+    .fd-title{ font-weight:800; letter-spacing:-0.02em; }
+    .fd-subtitle{ margin-top:0.25rem; opacity:0.92; }
+
+    .fd-section{ padding-top:1.5rem; padding-bottom:1.5rem; }
+    .fd-divider{ height:1px; background:rgba(0,0,0,0.08); margin:1.25rem 0; }
+
+    /* One video per row */
+    .fd-row{ margin: 1.05rem 0 1.65rem; }
+    .fd-row video{ width:100%; height:auto; border-radius:12px; background:#000; display:block; }
+    .fd-cap{ margin-top:10px; font-size:1.02rem; line-height:1.35; }
+    .fd-cap small{ opacity:0.85; font-weight:500; }
+  </style>
+
+  <title>FlowerDance — Anonymous Project Page</title>
+</head>
+
+<body>
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+
+    <!-- HERO (Anonymous; no author list) -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+
+              <h1 class="title is-1 publication-title fd-title" aria-label="FlowerDance">
+                <span style="color:var(--flowcolor)">Flow</span><span style="color:var(--ecolor)">e</span><span style="color:var(--rcolor)">r</span><span style="color:var(--dancecolor)">Dance</span><span>:</span>
+              </h1>
+
+              <p class="is-size-5 fd-subtitle">
+                Mean<span style="color:var(--flowcolor); font-weight:800;">Flow</span> for
+                <span style="color:var(--ecolor); font-weight:800;">E</span>fficient and
+                <span style="color:var(--rcolor); font-weight:800;">R</span>efined 3D
+                <span style="color:var(--dancecolor); font-weight:800;">Dance</span> Generation
+              </p>
+
+              <p class="is-size-6 fd-subtitle" style="margin-top:0.6rem;">
+                Anonymous Project Page
+              </p>
+
+              <!-- Optional safe links (remove if your venue forbids external links) -->
+              <div class="column has-text-centered" style="margin-top: 0.9rem;">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://www.youtube.com/watch?v=Xhi8EYKn5i8" target="_blank" rel="noopener"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-youtube"></i></span>
+                      <span>Full Demo (YouTube)</span>
+                    </a>
+                  </span>
+                                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/XulongT/FlowerDance" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                </div>
+                <!-- <p class="fd-subtitle" style="margin-top: 0.6rem;">
+                  Local clips are loaded from <code>./demo_vids/</code>.
+                </p> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEASER IMAGE -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./teaser/flowerteaser.png" alt="FlowerDance teaser"
+               style="width:95%; max-width:1200px; border-radius:12px;">
+          <h2 class="subtitle has-text-centered" style="margin-top: 12px;">
+            FlowerDance generates refined motion with physical plausibility and artistic expressiveness,
+            while improving inference speed and memory efficiency.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABSTRACT -->
+    <section class="section hero is-light fd-section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Music-to-dance generation aims to translate auditory signals into expressive human motion, with broad applications in virtual reality,
+                choreography, and digital entertainment. Despite promising progress, the limited generation efficiency of existing methods leaves
+                insufficient computational headroom for high-fidelity 3D rendering, thereby constraining the expressiveness of 3D characters during
+                real-world applications. Thus, we propose FlowerDance, which not only generates refined motion with physical plausibility and artistic
+                expressiveness, but also achieves significant generation efficiency on inference speed and memory utilization. Specifically, FlowerDance
+                combines MeanFlow with Physical Consistency Constraints, which enables high-quality motion generation with only a few sampling steps.
+                Moreover, FlowerDance leverages a simple but efficient model architecture with BiMamba-based backbone and Channel-Level Cross-Modal Fusion,
+                which generates dance with efficient non-autoregressive manner. Meanwhile, FlowerDance supports motion editing, enabling users to
+                interactively refine dance sequences. Extensive experiments on AIST++ and FineDance show that FlowerDance achieves state-of-the-art results
+                in both motion quality and generation efficiency. Code will be released upon acceptance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section fd-section">
+      <div class="container is-max-desktop content">
+
+        <!-- Comparison in detail -->
+        <h2 class="title is-3">Comparison in Detail</h2>
+
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_oursvsmega.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_oursvslodge.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_oursvsfinnet.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-divider"></div>
+
+        <!-- Grouped comparison -->
+        <h2 class="title is-3">Comparison (Grouped)</h2>
+
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_cmp1.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_cmp2.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-divider"></div>
+
+        <!-- Ablation Study -->
+        <h2 class="title is-3">Ablation Study</h2>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_abl_1.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_abl_2.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_abl_3.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_abl_4.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_abl_5.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_abl_6.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="fd-divider"></div>
+
+        <!-- Motion Edition -->
+        <h2 class="title is-3">Motion Edition</h2>
+
+        <div class="fd-row">
+          <video controls playsinline preload="metadata">
+            <source src="./demo_vids/fl_motionedit.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>,
+              adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a> project page.
+              <br>
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
+                Creative Commons Attribution-ShareAlike 4.0 International License
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToTop(){ window.scrollTo({top:0, behavior:'smooth'}); }
+  </script>
+</body>
+</html>
